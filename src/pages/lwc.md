@@ -1,5 +1,5 @@
 ---
-title: ''
+title: Lightning Web Components
 subtitle: lorem-ipsum
 excerpt: lorem-ipsum
 img_alt: lorem-ipsum
