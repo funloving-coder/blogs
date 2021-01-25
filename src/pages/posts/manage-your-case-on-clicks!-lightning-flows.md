@@ -2,7 +2,10 @@
 title: Manage your case on clicks! - Lightning Flows
 subtitle: Salesforce Lightning Visual Flows
 date: '2021-01-25'
-thumb_img_alt: ''
+thumb_img_alt: >-
+  In a fast phase workstyle, we need to do our work just on clicks with more
+  efficiency. Salesforce provides you the best platform to manage your cases
+  just on a few clicks using Lightning Flows.
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 canonical_url: lorem-ipsum
