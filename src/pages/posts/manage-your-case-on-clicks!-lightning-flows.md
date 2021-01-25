@@ -1,6 +1,6 @@
 ---
 title: Manage your case on clicks! - Lightning Flows
-subtitle: lorem-ipsum
+subtitle: Salesforce Lightning Visual Flows
 date: '2021-01-25'
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
