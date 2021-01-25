@@ -1,16 +1,114 @@
 ---
 title: Manage your case on clicks! - Lightning Flows
 subtitle: Salesforce Lightning Visual Flows
-date: '2021-01-25'
+date: 2021-01-25
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 canonical_url: lorem-ipsum
 template: post
+thumb_img_path: ''
+content_img_path: ''
+
 ---
-## Lorem ipsum
+#### **Learning Objectives**
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+After completing this blog you will be able to
 
-- Lorem ipsum
-- dolor sit amet
+* Manage cases with just clicks.
+* What is Flows?
+* How Flows can be integrated with Lightning Components
+
+#### **Introduction**
+
+In a fast phase workstyle, we need to do our work just on clicks with more efficiency. Salesforce provides you the best platform to manage your cases just with a few clicks using **Lightning Flows**.
+
+Salesforce provides you with **Lightning Flows** which helps to manage your work just on clicks, **Lightning Flows** provides you an easy playground where you can build some flow diagrams and use them on your records.
+
+In the flow, you can use Apex, Lightning Components, and also helps you to create, update and delete your records with just one click.
+
+#### **Use Case**
+
+Starting with a use case where a product based company is managing its Cases.
+
+When a customer submits a case to the company, according to its record type system suggests a few steps follow/manage the case. Some steps can be dependent, few can be optional and required for managing the case.
+
+When a company’s representative opens the record a lightning component will help him to complete the masonry steps on case to close the case.
+
+#### **Implementation**
+
+Implementing the use case, where we will use a few objects, metadata for configuration using flows we and its playground we can easily set up all the flows, here we start.
+
+Object Relationship
+
+![](/images/object-flow-diagram.jpeg)
+
+**Case Plan Object**
+
+* Name
+* Record Type (Case Record Type Name)
+* Status (New, In Progress, Completed)
+
+This object will be used for maintaining a proper plan for each Case Record Type, where only one Case Plan will be active at a time and associated it with the Case Record Type using Metadata.
+
+**Case Step Object**
+
+* Name (Unique)
+* Action (Flow Name)
+* Case Plan (MD)
+* Associated Case (Lookup)
+* Status (New, In Progress, Completed).
+* Required. (Checkbox)
+* Dependent Case Step (Text Name of Case Step).
+
+Case Step Object used for adding action, like users want to send an Acknowledgement to a customer that ‘your logged case is in progress’. System Admin will create a flow/workflow and add its API Name to the case step Action field.
+
+**Case Object**
+
+* Add a custom field associated with Case Plan (Lookup To Case Plan).
+
+Whenever a case record is created, trigger fired and add active Case Plan id to associated Case Plan field on Case object from metadata.
+
+**Create a Metadata - To maintain the uniqueness of the Case Plan on each case record.**
+
+* Active Case Plan Id (Text).
+* Record Type (Text).
+
+**Create Case Plan Flow**
+
+Create a Lightning flow that helps you to edit and insert a new Case Plan and this case plan flow will fire another flow which will help you to add Case Steps to your Case Plan and each case steps have their action.
+
+**![](/images/create-case-plan.png)**
+
+**Create a Lightning Component that provides you the UI of your application.**
+
+![](/images/lc.png)
+
+Each button is associated with its Case Step, so when the user clicks on the button an action flow is fired using <lightning: flow>.
+
+In the flow, you have to check its status if it is 'In Progress', you need to complete manual action if it is an automated flow it will be fired automatically and update the status of Case Step as well according to the flow diagram.
+
+In the flow you have to check its status if it is 'In Progress', you need to complete manual action if it is an automated flow it will be fired automatically and update the status of Case Step as well according to the flow diagram.
+
+![](/images/managing-case-steps.png)
+
+The diagram below shows the detailed functionality of the component.The diagram below shows the detailed functionality of the component.The diagram below shows the detailed functionality of the component.
+
+The diagram below shows the detailed functionality of the component.
+
+![](/images/product-case-management-final.png)
+
+#### **Future Scope**
+
+In the future we can also provide:
+
+* Feedback System after closing case.
+* Live updates for customer’s problems.
+* Automated assigned cases as per the company representative’s skill set.
+* Provide community to end-users and give them a flow that helps them to log a case with some suggestions and predictions.
+
+#### **Useful Links.**
+
+* [Lightning Flows Trailhead](https://trailhead.salesforce.com/en/content/learn/modules/business_process_automation)
+* [How to add flows in Lightning Component](https://developer.salesforce.com/docs/component-library/bundle/lightning:flow/example)
+* [Lightning Component](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm)
