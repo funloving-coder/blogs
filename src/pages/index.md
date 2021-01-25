@@ -24,7 +24,7 @@ sections:
         label: Contact Me
         url: /contact
         style: button
-    image: /images/Auli-6.jpg
+    image: /images/intro.jpg
   - type: section_posts
     template: section_posts
     title: Recent Posts
