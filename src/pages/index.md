@@ -25,5 +25,5 @@ sections:
         url: blog/index.html
         style: button
 template: advanced
-excerpt: hello
+excerpt: ''
 ---
