@@ -9,7 +9,7 @@ sections:
     content: ''
   - type: section_content
     template: section_content
-    title: About
+    title: ''
     section_id: about
     content: ''
     actions:
