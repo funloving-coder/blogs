@@ -1,36 +1,42 @@
+---
 label: Page
 hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page
-    config:
-      required: true
-  - type: text
-    name: subtitle
-    label: Subtitle
-    description: The text shown just below the page title.
-  - type: text
-    name: excerpt
-    label: Excerpt
-    description: The excerpt of the page displayed in meta data.
-  - type: file
-    name: img_path
-    label: Image
-    description: The image shown below the page title and subtitle.
-  - type: text
-    name: img_alt
-    label: Image Alt Text
-    description: The alt text of the image.
-  - type: text
-    name: template
-    label: Template
-    hidden: true
-    default: page
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the page
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The text shown just below the page title.
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: The excerpt of the page displayed in meta data.
+- type: file
+  name: img_path
+  label: Image
+  description: The image is shown below the page title and subtitle.
+- type: text
+  name: img_alt
+  label: Image Alt Text
+  description: The alt text of the image.
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: page
+  config:
+    required: true
+- name: add_label_to_page
+  type: tag_list
+  default: []
+  label: Add Label to Page
+  hidden: false
 pages:
-  - src/pages/about.md
-  - src/pages/thank-you.md
-  - src/pages/lwc.md
+- src/pages/about.md
+- src/pages/lwc.md
+- src/pages/thank-you.md
