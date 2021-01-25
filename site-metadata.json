@@ -29,7 +29,7 @@
             },
             {
                 "label": "LWC",
-                "url": "lorem-ipsum",
+                "url": "lwc",
                 "style": "link",
                 "icon_class": "lorem-ipsum",
                 "new_window": false,
