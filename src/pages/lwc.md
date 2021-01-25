@@ -1,7 +1,7 @@
 ---
 title: Lightning Web Components
 subtitle: LWC
-excerpt: lorem-ipsum
+excerpt: LWC
 img_alt: lorem-ipsum
 template: page
 ---
