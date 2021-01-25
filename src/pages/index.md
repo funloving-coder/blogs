@@ -18,7 +18,6 @@ sections:
         label: Contact Me
         url: /contact
         style: button
-    image: /images/intro.jpg
   - type: section_posts
     template: section_posts
     title: Recent Posts
