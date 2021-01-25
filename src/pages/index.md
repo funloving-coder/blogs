@@ -12,12 +12,7 @@ sections:
     title: ''
     section_id: about
     content: ''
-    actions:
-      - type: action
-        template: action
-        label: Contact Me
-        url: /contact
-        style: button
+    actions: []
   - type: section_posts
     template: section_posts
     title: Recent Posts
