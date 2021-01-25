@@ -31,7 +31,7 @@
                 "label": "LWC",
                 "url": "lwc",
                 "style": "link",
-                "icon_class": "lorem-ipsum",
+                "icon_class": "lwc",
                 "new_window": false,
                 "no_follow": false,
                 "type": "action"
