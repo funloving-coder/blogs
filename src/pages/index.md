@@ -4,7 +4,7 @@ hide_title: true
 sections:
   - type: section_hero
     template: section_hero
-    title: 'Blog on Salesforce, HTML, JS, CSS'
+    title: Tech Blogs on Salesforce
     section_id: hero
     content: ''
   - type: section_content
