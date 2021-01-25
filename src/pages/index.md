@@ -4,7 +4,7 @@ hide_title: true
 sections:
   - type: section_hero
     template: section_hero
-    title: Learn new
+    title: Learn New Tech
     section_id: hero
     content: ''
   - type: section_content
